@@ -303,3 +303,7 @@ jobs:
       data_cache_prefix: ${{needs.sync.outputs.DATA_CACHE_PREFIX}}
     needs:
       - sync
+    permissions:
+     contents: read
+     pages: write
+     id-token: write  
